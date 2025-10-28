@@ -1,7 +1,6 @@
-//components/SearBar.tsx
-import React from 'react';
+import type { SearchBarProps } from '../types';
 
-function SearchBar({ value, onChange }) {
+function SearchBar({ value, onChange }: SearchBarProps) {
   return (
     <input
       className="search-input"

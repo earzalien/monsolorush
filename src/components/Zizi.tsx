@@ -1,12 +1,8 @@
-import React, { useState } from 'react';
-import type { SuperZizi } from '../types';
+import { useState } from 'react';
+import type { ZiziProps } from '../types';
 
-interface ZiziProps {
-  zizi: SuperZizi;
-}
 
 function Zizi({ zizi }: ZiziProps) {
-  // État local pour afficher/masquer les détails
   const [openCard, setOpenCard] = useState(false);
 
   return (

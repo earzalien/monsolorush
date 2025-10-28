@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Zizis from './data/data';
 import './App.css';
-
+import type { SuperZizi } from './types';
 import SearchBar from './components/SearchBar';
 import Zizi from './components/Zizi';
 import Kelzizi from './components/kelzizi';
@@ -11,9 +11,9 @@ function App() {
   const [openZiziId, setOpenZiziId] = useState<number | null>(null);
   const [open, setOpen] = useState(false);
   const [openQuizz, setOpenQuizz] = useState(false);
-  const Search = e => setSearch(e.target.value);
+  const Search = (e: React.ChangeEvent<HTMLInputElement>) => setSearch(e.target.value);
 
-  let filteredList = Zizis.filter(zizi => zizi.nom.toLowerCase().includes(search.toLowerCase()));
+ let filteredList: SuperZizi[] = Zizis.filter(zizi => zizi.nom.toLowerCase().includes(search.toLowerCase()));
 
   return (
     <>
