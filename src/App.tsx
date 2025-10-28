@@ -29,10 +29,10 @@ function App() {
                 <Zizi key={zizi.id} zizi={zizi} isOpen={openZiziId === zizi.id} onToggle={() => setOpenZiziId(openZiziId === zizi.id ? null : zizi.id)} />
             )))
             }
-          </div><hr />
+          </div><br />
         </section>
       )}
-      <h2 id="quizizi" onClick={() => setOpenQuizz(o => !o)}
+      <br /><h2 id="quizizi" onClick={() => setOpenQuizz(o => !o)}
         style={{ cursor: 'pointer' }}
         aria-expanded={openQuizz}>Quel <strong>beuteu</strong> es-tu ?</h2>
       {openQuizz && (

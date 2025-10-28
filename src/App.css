@@ -17,6 +17,12 @@ a:hover{
 border-radius: 10px;
 border: 0;
 }
+h2{
+  border: 1px solid;
+  border-radius: 20px;
+  width: 50%;
+  margin: auto;
+}
 .search-input:active{
   border:0;
   background-color: aqua;
