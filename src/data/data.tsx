@@ -9,7 +9,7 @@ const Zizis: SuperZizi[] = [
     "accessoire": "Slips en titane",
     "faiblesse": "Savon trop glissant",
     "devise": "Toujours droit devant !",
-    "image": "./public/img/super-zizi.png"
+    "image": "/img/super-zizi.png"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@ const Zizis: SuperZizi[] = [
     "accessoire": "Casquette rétro",
     "faiblesse": "Frigidaire géant",
     "devise": "Plus fort, plus long !",
-    "image": "./public/img/zizi-elastic.png"
+    "image": "/img/zizi-elastic.png"
   },
   {
     "id": 3,
@@ -29,7 +29,7 @@ const Zizis: SuperZizi[] = [
     "accessoire": "Sceptre étoilé",
     "faiblesse": "Fou rire",
     "devise": "Time-out pour tous !",
-    "image": "./public/img/miss-clito.jpeg"
+    "image": "/img/miss-clito.jpeg"
   },
   {
     "id": 4,
@@ -39,7 +39,7 @@ const Zizis: SuperZizi[] = [
     "accessoire": "Tableau magique",
     "faiblesse": "Trop de pizzas",
     "devise": "Le cerveau avant tout !",
-    "image": "./public/img/professeur-mst.png"
+    "image": "/img/professeur-mst.png"
   },
   {
     "id": 5,
@@ -49,7 +49,7 @@ const Zizis: SuperZizi[] = [
     "accessoire": "Ceinture-piton",
     "faiblesse": "Allergie au nylon",
     "devise": "Protection maximum !",
-    "image": "./public/img/capitaine-braguette.jpg"
+    "image": "/img/capitaine-braguette.jpg"
   },
   {
     "id": 6,
@@ -59,7 +59,7 @@ const Zizis: SuperZizi[] = [
     "accessoire": "Cape multifonction",
     "faiblesse": "Lavage à haute température",
     "devise": "Personne ne m'attrapera !",
-    "image": "./public/img/mystere-slipman.jpg"
+    "image": "/img/mystere-slipman.jpg"
   },
   {
     "id": 7,
@@ -69,7 +69,7 @@ const Zizis: SuperZizi[] = [
     "accessoire": "De l'alcool",
     "faiblesse": "Les sous vetements",
     "devise": "J'apporte toujours “l'ambiance”.",
-    "image": "./public/img/tonton-fesse-tival.jpg"
+    "image": "/img/tonton-fesse-tival.jpg"
   }
 ];
 
