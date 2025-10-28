@@ -25,7 +25,7 @@ function App() {
         <section>
           <SearchBar value={search} onChange={Search} />
           <div className="zizi-list">
-            {filteredList.length === 0 ? ( <p>Aucun résultat</p>  ) : (  filteredList.map(zizi => (
+            {filteredList.length === 0 ? ( <p>Aucune quéquette à l'horizon</p>  ) : (  filteredList.map(zizi => (
                 <Zizi key={zizi.id} zizi={zizi} isOpen={openZiziId === zizi.id} onToggle={() => setOpenZiziId(openZiziId === zizi.id ? null : zizi.id)} />
             )))
             }
