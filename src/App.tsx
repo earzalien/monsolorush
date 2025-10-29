@@ -25,13 +25,20 @@ function App() {
       <h2 id="voirzizi" onClick={() => setOpen(o => !o)}
         aria-expanded={open}>Voir les <strong>Zizis</strong>
       </h2>
+
       {open && (
         <section>
           <SearchBar value={search} onChange={Search} />
+
           <div className="zizi-list">
-            {filteredList.length === 0 ? ( <p>Aucune quéquette à l'horizon</p>  ) : (  filteredList.map(zizi => (
-                <Zizi key={zizi.id} zizi={zizi} isOpen={openZiziId === zizi.id} onToggle={() => setOpenZiziId(openZiziId === zizi.id ? null : zizi.id)} />
-            )))
+            {filteredList.length === 0 ? (
+              <p>Aucune quéquette à l'horizon</p>) :
+              (filteredList.map(zizi => (
+                <Zizi key={zizi.id} zizi={zizi} isOpen={openZiziId === zizi.id}
+                  onToggle={
+                    () => setOpenZiziId(openZiziId === zizi.id ? null : zizi.id)
+                  } />
+              )))
             }
           </div>
           <br /><br />
@@ -47,9 +54,8 @@ function App() {
 
        )}
       <footer>
-        <span className="slip">🩲 Super Zizi & La Beuteu Team | Ce site est alimenté par l'énergie du <i>fameux zizi</i> et vos fous rires.</span>
+        🩲 Super Zizi & La Beuteu Team | Ce site est alimenté par l'énergie du <i>fameux zizi</i> et vos fous rires.
       </footer>
-
    </>
   );
 }

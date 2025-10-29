@@ -4,6 +4,7 @@
   padding: 2rem;
   text-align: center;
 }
+
 body{
   background-color: rgb(241, 173, 173);
   color: black;
@@ -12,6 +13,7 @@ body{
 body:active{
   cursor: url("../public/img/ziziactive.png") 10 0, default;
 }
+
 a{
   color: purple;
   cursor: url("../public/img/zizihover.png") 10 0, default;
@@ -23,6 +25,7 @@ a:hover{
 a:active{
   cursor: url("../public/img/ziziactive.png") 10 0, default;
 }
+
 .search-input{
 border-radius: 10px;
 height: 30px;
@@ -30,6 +33,11 @@ border: 0;
 margin-top: 15px;
 cursor: url("../public/img/zizihover.png") 10 0, default;
 }
+.search-input:active{
+  border:0;
+  background-color: #f8878a;
+}
+
 h2{
   border: 1px solid;
   border-radius: 20px;
@@ -45,16 +53,13 @@ h2:hover{
 h2:active{
   cursor: url("../public/img/ziziactive.png") 10 0, default;
 }
-.search-input:active{
-  border:0;
-  background-color: #f8878a;
-}
-.card {
-  padding: 2em;
+
+h2#quizizi {
+  margin-top: 30px;
 }
 
-.read-the-docs {
-  color: #888;
+.card {
+  padding: 2em;
 }
 
 .zizi-list {
@@ -75,6 +80,11 @@ h2:active{
   display: inline-block;
   vertical-align: top;
 }
+
+.zizi-card header, .zizi-card section, .zizi-card footer {
+  margin-bottom: 1rem;
+}
+
 img:hover{
   cursor: url("../public/img/zizihover.png") 10 0, default;
   animation: ziziQuiVibre 0.2s infinite;
@@ -83,14 +93,11 @@ img:active{
   cursor: url("../public/img/npmziziactive.png") 10 0, default;
 }
 
-.zizi-card header, .zizi-card section, .zizi-card footer {
-  margin-bottom: 1rem;
-}
-
 .zizi-costume {
   color: #a153b9;
   margin: 0.2em 0 0 0;
 }
+
 .zizi-devise {
   font-style: italic;
   color: #b34f4f;
@@ -98,35 +105,36 @@ img:active{
   padding-left: 1em;
   border-left: 4px solid #f8878a;
 }
+
+.button{
+cursor: url("../public/img/npmziziactive.png") 10 0, default;
+}
+.button:hover{
+animation: ziziQuiVibre 0.2s infinite;
+cursor: no-drop;
+}
+
 hr {
   border : 2px solid #b34f4f;
 }
+
 ol {
   text-align: left;
 }
 
-.slip {
-  display: inline-block;
-  animation: floaty 3s ease-in-out infinite;
-}
 footer {
   margin-top: 200px;
-
+  display: inline-block;
+  animation: floaty 3s ease-in-out infinite;
 }
 footer:hover {
   animation: ziziQuiVibre 0.2s infinite;
 }
+
 @keyframes ziziQuiVibre {
   0% { transform: translate(0); }
   25% { transform: translate(-1px, 1px); }
   50% { transform: translate(1px, -1px); }
   75% { transform: translate(-1px, -1px); }
   100% { transform: translate(1px, 1px); }
-}
-.button:hover{
-animation: ziziQuiVibre 0.2s infinite;
-cursor: no-drop;
-}
-.button{
-cursor: url("../public/img/npmziziactive.png") 10 0, default;
 }
