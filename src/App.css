@@ -59,9 +59,7 @@ h2:active{
   gap: 24px;
   justify-content: center;
 }
-.zizi-card:hover {
-    animation: ziziQuiVibre 0.2s infinite;
-}
+
 .zizi-card {
   background: #ffeaea;
   border-radius: 1rem;
@@ -75,6 +73,7 @@ h2:active{
 }
 img:hover{
   cursor: url("../public/img/zizihover.png"), default;
+  animation: ziziQuiVibre 0.2s infinite;
 }
 img:active{
   cursor: url("../public/img/npmziziactive.png"), default;
@@ -119,4 +118,11 @@ footer:hover {
   50% { transform: translate(1px, -1px); }
   75% { transform: translate(-1px, -1px); }
   100% { transform: translate(1px, 1px); }
+}
+.button:hover{
+animation: ziziQuiVibre 0.2s infinite;
+cursor: no-drop;
+}
+.button{
+cursor: url("../public/img/npmziziactive.png"), default;
 }
