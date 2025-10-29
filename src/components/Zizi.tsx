@@ -4,14 +4,13 @@ import type { ZiziProps } from '../types';
 
 function Zizi({ zizi }: ZiziProps) {
   const [openCard, setOpenCard] = useState(false);
-
+  const [counterLike, setCounterLike] = useState(0);
   return (
-    <article className="zizi-card"
-      onClick={() => setOpenCard(o => !o)}
+    <article className="zizi-card">
+        <img onClick={() => setOpenCard(o => !o)}
       style={{ cursor: 'pointer' }}
-      aria-expanded={openCard}>
-        <img src={zizi.image} alt={`Portrait de ${zizi.nom}`} width="150px" height="150px" className="zizi-img" />
-        <h3>{zizi.nom}</h3>
+      aria-expanded={openCard} src={zizi.image} alt={`Portrait de ${zizi.nom}`} width="150px" height="150px" className="zizi-img" />
+        <h3>{zizi.nom}</h3><button type="button" onClick={() => setCounterLike((counterLike) => counterLike + 1)}>❤️ : {counterLike}</button>
       {openCard && (
         <section>
           <p><strong>Costume :</strong> {zizi.costume}</p>
