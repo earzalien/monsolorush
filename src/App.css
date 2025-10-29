@@ -76,6 +76,9 @@ h2:active{
 img:hover{
   cursor: url("../public/img/zizihover.png"), default;
 }
+img:active{
+  cursor: url("../public/img/npmziziactive.png"), default;
+}
 
 .zizi-card header, .zizi-card section, .zizi-card footer {
   margin-bottom: 1rem;
