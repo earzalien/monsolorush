@@ -19,9 +19,12 @@ function App() {
 
   return (
     <>
-      <h1><a href="index.html">Super ZiZi</a></h1>
+      <header>
+        <h1><a href="index.html">Super ZiZi</a></h1>
+      </header>
       <h2 id="voirzizi" onClick={() => setOpen(o => !o)}
-        aria-expanded={open}>Voir les <strong>Zizis</strong></h2>
+        aria-expanded={open}>Voir les <strong>Zizis</strong>
+      </h2>
       {open && (
         <section>
           <SearchBar value={search} onChange={Search} />
@@ -30,10 +33,12 @@ function App() {
                 <Zizi key={zizi.id} zizi={zizi} isOpen={openZiziId === zizi.id} onToggle={() => setOpenZiziId(openZiziId === zizi.id ? null : zizi.id)} />
             )))
             }
-          </div><br />
+          </div>
+          <br /><br />
         </section>
       )}
-      <br /><h2 id="quizizi" onClick={() => setOpenQuizz(o => !o)}
+
+      <h2 id="quizizi" onClick={() => setOpenQuizz(o => !o)}
         aria-expanded={openQuizz}>Quel <strong>beuteu</strong> es-tu ?</h2>
       {openQuizz && (
         <section>
@@ -42,7 +47,7 @@ function App() {
 
        )}
       <footer>
-  🩲  <span className="slip">Super Zizi & La Beuteu Team | Ce site est alimenté par l’énergie du fameux zizi et vos fous rires.</span>
+        <span className="slip">🩲 Super Zizi & La Beuteu Team | Ce site est alimenté par l'énergie du <i>fameux zizi</i> et vos fous rires.</span>
       </footer>
 
    </>

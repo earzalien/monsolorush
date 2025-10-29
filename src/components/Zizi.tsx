@@ -5,6 +5,7 @@ import type { ZiziProps } from '../types';
 function Zizi({ zizi }: ZiziProps) {
   const [openCard, setOpenCard] = useState(false);
   const [counterLike, setCounterLike] = useState(0);
+  
   return (
     <article className="zizi-card">
         <img onClick={() => setOpenCard(o => !o)}

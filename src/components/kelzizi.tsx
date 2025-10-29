@@ -96,7 +96,6 @@ const [textValue, setTextValue] = useState('');
             <button onClick={changeTextValue}>Résultat</button>
         </>
  )   
-
 }
 
 export default Kelzizi;

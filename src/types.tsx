@@ -1,4 +1,3 @@
-//types.tsx
 export interface SuperZizi {
 id: number;
 nom: string;

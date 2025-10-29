@@ -7,43 +7,47 @@
 body{
   background-color: rgb(241, 173, 173);
   color: black;
-  cursor: url("../public/img/zizinormal.png"), default;
+  cursor: url("../public/img/zizinormal.png") 10 0, default;
 }
 body:active{
-  cursor: url("../public/img/ziziactive.png"), default;
+  cursor: url("../public/img/ziziactive.png") 10 0, default;
 }
 a{
   color: purple;
-  cursor: url("../public/img/zizihover.png"), default;
+  cursor: url("../public/img/zizihover.png") 10 0, default;
 }
 a:hover{
   color: darkorchid;
-  cursor: url("../public/img/zizihover.png"), default;
+  cursor: url("../public/img/zizihover.png") 10 0, default;
 }
 a:active{
-  cursor: url("../public/img/ziziactive.png"), default;
+  cursor: url("../public/img/ziziactive.png") 10 0, default;
 }
 .search-input{
 border-radius: 10px;
+height: 30px;
 border: 0;
-cursor: url("../public/img/zizihover.png"), default;
+margin-top: 15px;
+cursor: url("../public/img/zizihover.png") 10 0, default;
 }
 h2{
   border: 1px solid;
   border-radius: 20px;
   width: 50%;
+  height: 50px;
   margin: auto;
-  cursor: url("../public/img/zizihover.png"), default;
+  padding-top: 5px;
+  cursor: url("../public/img/zizihover.png") 10 0, default;
 }
 h2:hover{
-  cursor: url("../public/img/zizihover.png"), default;
+  cursor: url("../public/img/zizihover.png") 10 0, default;
 }
 h2:active{
-  cursor: url("../public/img/ziziactive.png"), default;
+  cursor: url("../public/img/ziziactive.png") 10 0, default;
 }
 .search-input:active{
   border:0;
-  background-color: aqua;
+  background-color: #f8878a;
 }
 .card {
   padding: 2em;
@@ -72,11 +76,11 @@ h2:active{
   vertical-align: top;
 }
 img:hover{
-  cursor: url("../public/img/zizihover.png"), default;
+  cursor: url("../public/img/zizihover.png") 10 0, default;
   animation: ziziQuiVibre 0.2s infinite;
 }
 img:active{
-  cursor: url("../public/img/npmziziactive.png"), default;
+  cursor: url("../public/img/npmziziactive.png") 10 0, default;
 }
 
 .zizi-card header, .zizi-card section, .zizi-card footer {
@@ -124,5 +128,5 @@ animation: ziziQuiVibre 0.2s infinite;
 cursor: no-drop;
 }
 .button{
-cursor: url("../public/img/npmziziactive.png"), default;
+cursor: url("../public/img/npmziziactive.png") 10 0, default;
 }
