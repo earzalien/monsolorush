@@ -21,7 +21,6 @@ function App() {
     <>
       <h1><a href="index.html">Super ZiZi</a></h1>
       <h2 id="voirzizi" onClick={() => setOpen(o => !o)}
-        style={{ cursor: 'pointer' }}
         aria-expanded={open}>Voir les <strong>Zizis</strong></h2>
       {open && (
         <section>
@@ -35,7 +34,6 @@ function App() {
         </section>
       )}
       <br /><h2 id="quizizi" onClick={() => setOpenQuizz(o => !o)}
-        style={{ cursor: 'pointer' }}
         aria-expanded={openQuizz}>Quel <strong>beuteu</strong> es-tu ?</h2>
       {openQuizz && (
         <section>

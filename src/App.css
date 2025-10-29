@@ -7,23 +7,39 @@
 body{
   background-color: rgb(241, 173, 173);
   color: black;
-  cursor: url("/img/zizinormal.png"), pointer;
+  cursor: url("../public/img/zizinormal.png"), default;
+}
+body:active{
+  cursor: url("../public/img/ziziactive.png"), default;
 }
 a{
   color: purple;
+  cursor: url("../public/img/zizihover.png"), default;
 }
 a:hover{
   color: darkorchid;
+  cursor: url("../public/img/zizihover.png"), default;
+}
+a:active{
+  cursor: url("../public/img/ziziactive.png"), default;
 }
 .search-input{
 border-radius: 10px;
 border: 0;
+cursor: url("../public/img/zizihover.png"), default;
 }
 h2{
   border: 1px solid;
   border-radius: 20px;
   width: 50%;
   margin: auto;
+  cursor: url("../public/img/zizihover.png"), default;
+}
+h2:hover{
+  cursor: url("../public/img/zizihover.png"), default;
+}
+h2:active{
+  cursor: url("../public/img/ziziactive.png"), default;
 }
 .search-input:active{
   border:0;
@@ -56,6 +72,9 @@ h2{
   width: 300px;
   display: inline-block;
   vertical-align: top;
+}
+img:hover{
+  cursor: url("../public/img/zizihover.png"), default;
 }
 
 .zizi-card header, .zizi-card section, .zizi-card footer {

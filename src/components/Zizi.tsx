@@ -8,7 +8,6 @@ function Zizi({ zizi }: ZiziProps) {
   return (
     <article className="zizi-card">
         <img onClick={() => setOpenCard(o => !o)}
-      style={{ cursor: 'pointer' }}
       aria-expanded={openCard} src={zizi.image} alt={`Portrait de ${zizi.nom}`} width="150px" height="150px" className="zizi-img" />
         <h3>{zizi.nom}</h3><button type="button" onClick={() => setCounterLike((counterLike) => counterLike + 1)}>❤️ : {counterLike}</button>
       {openCard && (
