@@ -15,6 +15,8 @@ function App() {
 
  let filteredList: SuperZizi[] = Zizis.filter(zizi => zizi.nom.toLowerCase().includes(search.toLowerCase()));
 
+  console.log("Bah alors petit curieux tu cherche encore des zizis ? désolé mais il y en a pas ici. Cherche ailleurs dans le code, ils sont dissumulés partout ^^")
+
   return (
     <>
       <h1><a href="index.html">Super ZiZi</a></h1>

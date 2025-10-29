@@ -6,6 +6,8 @@
 }
 body{
   background-color: rgb(241, 173, 173);
+  color: black;
+  cursor: url("/img/zizinormal.png"), pointer;
 }
 a{
   color: purple;
